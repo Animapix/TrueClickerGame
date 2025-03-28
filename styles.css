@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif; /* Default font, no creativity here. */
+    text-align: center;
+    background-color: #1e1e1e; /* Dark like your soul after 500 clicks. */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Because everything has to be perfectly centered. */
+    align-items: center;
+    height: 100vh;
+}
+
+h1 {
+    font-size: 3rem; /* Big text because you're important, obviously. */
+    color: #e0e0e0;
+}
+
+#score {
+    font-size: 5rem; /* Huge numbers for your enormous ego. */
+    color: #1e88e5;
+}
+
+p {
+    font-size: 1.5rem; /* Normal-sized text, sorry no jokes here. */
+    color: #b0b0b0;
+}
+
+#clickButton {
+    font-size: 2rem; /* Huge button, impossible to miss even for you. */
+    padding: 20px 40px;
+    border: 2px solid #1e88e5;
+    border-radius: 10px; /* Rounded corners to prevent injuries. */
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+    cursor: pointer; /* Indicates it's clickable, genius. */
+    transition: all 0.3s ease-out; /* Smooth like butter. */
+}
+
+#clickButton:hover {
+    background-color: #3a3a3a; /* Changes slightly when you hover because UX. */
+    animation: buttonPulse 0.6s ease; /* Fancy animation, enjoy. */
+}
+
+#clickButton:active {
+    transform: scale(0.98); /* Pressed effect, super realistic. */
+}
+
+#infoText {
+    font-size: 1.2rem; /* Encouraging text size. */
+    color: #1e88e5;
+    margin-top: 15px;
+    min-height: 1.5rem; /* Ensures layout stability unlike your emotions. */
+}
+
+@keyframes buttonPulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); } /* Grows slightly, not a bug, it's a feature. */
+    100% { transform: scale(1); }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px); /* Appears from nowhere, magic! */
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0); /* Ends gracefully. */
+    }
+}
+
+.text-change-animation {
+    animation: fadeInUp 0.5s ease-out; /* Fancy text transition, you're welcome. */
+}
+
+/* Responsive design because even mobile users deserve love. */
+@media (max-width: 600px) {
+    h1 { font-size: 2rem; }
+    #score { font-size: 3rem; }
+    #clickButton { font-size: 1.5rem; padding: 15px 30px; }
+}
